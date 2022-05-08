@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+  <ProductList />
+  <ShoppingCart />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ProductList from "./components/ProductList.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    ProductList,
+    ShoppingCart,
   },
 };
 </script>
@@ -22,5 +25,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+ul li {
+  list-style-type: none;
 }
 </style>
